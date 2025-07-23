@@ -1,0 +1,5 @@
+Flask
+email-validator
+dnspython
+python-dotenv
+flask-limiter
