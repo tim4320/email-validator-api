@@ -3,3 +3,4 @@ email-validator
 dnspython
 python-dotenv
 flask-limiter
+flask-cors
