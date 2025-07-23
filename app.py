@@ -8,12 +8,15 @@ from functools import wraps
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from difflib import get_close_matches
+from flask_cors import CORS
 
 # Load environment variables
 load_dotenv()
 API_KEY = os.getenv("API_KEY", None)
 
 app = Flask(__name__)
+
+CORS(app) # Enable CORS for all routes
 
 # Rate limiting
 limiter = Limiter(
